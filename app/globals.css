@@ -17,11 +17,17 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #1D3444;
+
+}
+
+.hero {
+  @apply place-items-start;
+  @apply items-center;
+  
+}
+.hero-content{
+  @apply ml-[10rem]
+  
+  
 }
