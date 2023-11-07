@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap');
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -18,16 +20,227 @@
 
 body {
   color: #1D3444;
-
+  font-family: 'Poppins', sans-serif;
 }
 
 .hero {
   @apply place-items-start;
   @apply items-center;
+
+}
+
+.hero-content {
+  @apply ml-[10rem]
+}
+
+@media screen and (max-width: 780px) {
+  .hero-content {
+    @apply ml-0;
+
+  }
+}
+
+.menu {
+  @apply transition-all duration-300;
+}
+
+.menu.open {
+  @apply translate-x-0;
+}
+
+.menu.closed {
+  @apply -translate-x-full;
+}
+
+
+/*  slide css */
+/* In your CSS file */
+/* .slideshow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 100px;
+  transition: transform 0.3s;
+  margin: 0 10px;
+}
+
+img.active {
+  max-width: 150px; 
+  transform: scale(1.2); 
+}
+
+button {
+  margin: 0 10px;
+} */
+/* slide css end */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgClass {
+  height: 400px !important;
+}
+
+.swiper-slide {
+  padding-top: 20px;
+
+  transition: transform 0.5s ease;
+
+}
+
+.swiper-slide img {
+  height: 380px !important;
+
+}
+
+.swiper-slide-active {
+  padding: 0;
+}
+
+.swiper-slide-active img {
+  height: 400px !important;
+
+}
+
+.progress {
+  background-color: #F58A07 !important;
+  height: 0.3rem !important;
+}
+
+@media screen and (max-width:980px) {
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+
+  .swiper-slide-next {
+    margin-left: -70px !important;
+  }
+
+  .imgClass {
+    max-height: 400px !important;
+    width: 90% !important;
+  }
+
+
+}
+
+@media screen and (max-width:700px) {
+  .masonary-container .image-container img {
+    height: 350px;
+
+  }
+
+
+}
+
+.masonary-container {
+  max-width: 85%;
+  margin: 20px auto;
+}
+
+.masonary-container .title {
+  font-size: 25px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 15px;
+}
+
+.masonary-container .image-container {
+  columns: 2 250px;
+  gap: 55px;
+}
+
+.masonary-container .image-container img {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.imgHeight{
+  max-height: 187px;
+}
+
+.swiper-slide .imgHeight img {
+  height: 170px !important;
+
+}
+
+
+.swiper-slide-active .imgHeight img {
+  height: 187px !important;
+
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-family: swiper-icons;
+  font-size: 10px !important;
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+  background-color: #FEF3E6;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
-.hero-content{
-  @apply ml-[10rem]
-  
-  
+
+.swiper-button-prev:after{
+  margin-left: -30px;
+
+}
+
+.swiper-button-next:after{
+  margin-right: -50px;
+
+}
+
+.swiper-wrapper{
+/* padding-inline: 300px !important;
+margin-block: auto;
+width: 90% !important;
+display: flex !important; */
+
 }
