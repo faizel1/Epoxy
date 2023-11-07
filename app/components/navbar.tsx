@@ -3,16 +3,35 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react'
 import { usePathname } from 'next/navigation';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
-    
+    const menuVariants = {
+        closed: { 
+          x: '-100%',
+          opacity: 0
+        },
+        open: { 
+          x: 0,
+          opacity: 1,
+          transition: {
+            duration: 0.5,
+            ease: [0.61, 1, 0.88, 1]
+          }
+        }
+      }
+
     const [menuOpen, setMenuOpen] = useState(false);
     const currentRoute = usePathname();
 
     return (
 
         <header>
-            <nav >
+            <motion.nav
+               initial="closed"
+               animate={ "open"}
+               variants={menuVariants}
+            >
 
                 <div className={`${menuOpen ? "pl-10 pr-4" : "px-4"} flex justify-between items-center py-6 sm:px-10 md:px-0 2xl:px-40 container mx-auto`}>
 
@@ -55,12 +74,15 @@ const Navbar = () => {
 
                     </div>
                 </div>
-            </nav>
-            <nav
-                className={`${menuOpen ? 'flex flex-col h-[calc(100vh-80px)] px-10 ' : 'hidden'} md:hidden min-h-[calc(100vh-80px)]`}
-
+            </motion.nav>
+            <motion.nav
+                className={`${menuOpen ? 'flex flex-col h-[calc(100vh-80px)] px-10 ' : 'hidden'} md:hidden min-h-[calc(100vh-80px)] ease-in-out transition-transform`}
+                // className={`${menuOpen ? 'flex' : 'hidden'} md:hidden`}
+                initial="closed"
+                animate={menuOpen ? "open" : "closed"}
+                variants={menuVariants}
             >
-                <div className="flex flex-col h-3/4 justify-center  gap-3 mb-[100px]">
+                <div className="flex flex-col h-3/4 justify-center  gap-3 mb-[100px]  ">
 
                     <Link className={`hover:text-[#F58A07] text-[32px] md:text-xl font-bold ${currentRoute === '/' ? 'text-[#F58A07]' : 'text-[#394149]'} `}  onClick={() => setMenuOpen(!menuOpen)} href={"/"}>Home </Link>
 
@@ -81,7 +103,7 @@ const Navbar = () => {
                         <h2>Info@yourcompany.com</h2>
                     </div>
                 </div>
-            </nav>
+            </motion.nav>
         </header>
     )
 }

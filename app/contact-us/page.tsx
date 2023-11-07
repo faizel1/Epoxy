@@ -48,7 +48,7 @@ const Contact = () => {
             </div>
             <p className='text-[#5B5B5B] flex mx-auto pb-5 lg:hidden' >Fill up the Form  and ou team will get back to within 24 hrs</p>
 
-            <iframe width="100%" height="370" id="gmap_canvas" className='rounded-lg h-[300px] lg:h-[370px]' src="https://maps.google.com/maps?q=addis%20abab%20rang%20building&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameBorder="0" scrolling="no" marginHeight={0} marginWidth={0}></iframe>
+            <iframe width="100%" height="370" id="gmap_canvas" className='rounded-lg h-[300px] lg:h-[370px] lg:mt-8' src="https://maps.google.com/maps?q=addis%20abab%20rang%20building&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameBorder="0" scrolling="no" marginHeight={0} marginWidth={0}></iframe>
           </div>
 
         </div>

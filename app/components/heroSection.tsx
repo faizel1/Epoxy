@@ -3,6 +3,8 @@ import React from 'react'
 import Navbar from './navbar'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation';
+import { motion } from 'framer-motion';
+
 
 const HeroSection = () => {
   return (
@@ -22,15 +24,21 @@ const HeroSection = () => {
                   1000,
               
                 ]}
-                speed={20}
-                repeat={0}
+                speed={50}
+                repeat={10}
               />
                      
             </h1>
             <p className="mb-5 text-left ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique</p>
             <div className="my-10 flex items-center justify-start gap-10 ">
 
-              <button className="btn border-none text-white text-[14px] normal-case  bg-[#F58A07] rounded-full">See Our Services</button>
+              <motion.button  animate={{ rotate: 360 }}
+                transition={{
+                    type: "spring",
+                    damping: 50,
+                    mass: 0.75,
+                    stiffness: 100,
+                }} className="btn border-none text-white text-[14px] normal-case  bg-[#F58A07] rounded-full">See Our Services</motion.button>
               <p>See Our Portfolio</p>
             </div>
             <p className='mb-10 text-left text-[#FFFFFF80]' >Worked with 100+ Companies</p>

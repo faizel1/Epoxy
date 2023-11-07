@@ -73,7 +73,7 @@ const Testimonial = () => {
         <SwiperSlide><div className="flex flex-col max-w-[391px] sm:max-w-[491px] lg:max-w-[391px] lg:mx-auto">
           <div className="w-[90%] sm:w-full imgHeight">
 
-            <img src="/img/testimonial2.png" alt="" className='  rounded-t-md ' />
+            <img src="/img/testimonial1.png" alt="" className='  rounded-t-md ' />
           </div>
           <div className="flex flex-col items-center justify-center">
             <p className='max-w-[20rem] text-center px-8 py-5' >The service was absolutely impeccible. I see myself and my family visiting here much more frequently.</p>
@@ -94,7 +94,7 @@ const Testimonial = () => {
         <SwiperSlide><div className="flex flex-col max-w-[391px] sm:max-w-[491px] lg:max-w-[391px] lg:mx-auto">
           <div className="w-[90%] sm:w-full imgHeight">
 
-            <img src="/img/testimonial2.png" alt="" className=' rounded-t-md' />
+            <img src="/img/testimonial3.png" alt="" className=' rounded-t-md' />
           </div>
           <div className="flex flex-col items-center justify-center">
             <p className='max-w-[20rem] text-center px-8 py-5' >The service was absolutely impeccible. I see myself and my family visiting here much more frequently.</p>
@@ -104,7 +104,7 @@ const Testimonial = () => {
         <SwiperSlide><div className="flex flex-col max-w-[391px] sm:max-w-[491px] lg:max-w-[391px] lg:mx-auto">
           <div className="w-[90%] sm:w-full imgHeight">
 
-            <img src="/img/testimonial2.png" alt="" className='rounded-t-md ' />
+            <img src="/img/testimonial1.png" alt="" className='rounded-t-md ' />
           </div>
           <div className="flex flex-col items-center justify-center">
             <p className='max-w-[20rem] text-center px-8 py-5' >The service was absolutely impeccible. I see myself and my family visiting here much more frequently.</p>
