@@ -6,6 +6,15 @@ import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
+
+    const handlePhoneClick = () => {
+        window.location.href = `tel:+251930632722`;
+    };
+
+    const handleEmailClick = () => {
+        window.location.href = `mailto:`;
+    };
+
     const menuVariants = {
         closed: { 
           x: '-100%',
@@ -47,7 +56,10 @@ const Navbar = () => {
 
 
                     <div className={`${menuOpen && "hidden"} md:hidden items-center mr-4 space-x-4 ml-4  sm:mr-0 sm:ml-8 lg:ml-12`}>
-                        <p className="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded-full   text-[10px]  sm-[16px] bg-[#F58A071A] text-[#F58A07]">Call +251930632722</p>
+                        <p className="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded-full   text-[10px]  sm-[16px] bg-[#F58A071A] text-[#F58A07]" 
+                                                    onClick={handlePhoneClick}
+
+                        >Call +251 11 659 3154</p>
 
                     </div>
 
@@ -70,7 +82,10 @@ const Navbar = () => {
 
 
                     <div className="hidden md:flex items-center md:ml-0 lg:mr-8 space-x-4 sm:mr-0 sm:ml-8 lg:ml-12">
-                        <p className="text-text-gray-600  py-4 px-8 hover:cursor-pointer font-bold rounded-full   text-[18px]  sm-[16px] bg-[#F58A071A] text-[#F58A07]">Call +251930632722</p>
+                        <p className="text-text-gray-600  py-4 px-8 hover:cursor-pointer font-bold rounded-full   text-[18px]  sm-[16px] bg-[#F58A071A] text-[#F58A07]" 
+                                                    onClick={handlePhoneClick}
+
+                        >Call +251 11 659 3154</p>
 
                     </div>
                 </div>
@@ -82,7 +97,7 @@ const Navbar = () => {
                 animate={menuOpen ? "open" : "closed"}
                 variants={menuVariants}
             >
-                <div className="flex flex-col h-3/4 justify-center  gap-3 mb-[100px]  ">
+                <div className="flex flex-col h-2/3 justify-center  gap-3 mb-[20px]  ">
 
                     <Link className={`hover:text-[#F58A07] text-[32px] md:text-xl font-bold ${currentRoute === '/' ? 'text-[#F58A07]' : 'text-[#394149]'} `}  onClick={() => setMenuOpen(!menuOpen)} href={"/"}>Home </Link>
 
@@ -90,7 +105,7 @@ const Navbar = () => {
                     <Link className={`hover:text-[#F58A07] text-[32px] md:text-xl font-bold ${currentRoute === '/gallery' ? 'text-[#F58A07]' : 'text-[#394149]'} `}  onClick={() => setMenuOpen(!menuOpen)} href={"/gallery"}>Gallery</Link>
                     <Link className={`hover:text-[#F58A07] text-[32px] md:text-xl font-bold ${currentRoute === '/contact-us' ? 'text-[#F58A07]' : 'text-[#394149]'} `}  onClick={() => setMenuOpen(!menuOpen)} href={"/contact-us"}>Contact Us</Link>
                 </div>
-                <div className="flex h-1/4 gap-10">
+                <div className="flex h-1/3 gap-10">
                     <div className="flex flex-col">
                         <h2 className='font-bold text-xl'>Location</h2>
                         <h2>Addis Ababa,

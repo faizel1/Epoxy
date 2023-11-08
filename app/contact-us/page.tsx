@@ -18,8 +18,13 @@ const FadeInRight = ({ children }: any) => {
   )
 }
 const Contact = () => {
+
+  const handlePhoneClick = () => {
+    window.location.href = `tel:+251930632722`;
+};
+
   return (
-    <div className="">
+    <div className="max-w-[100%] overflow-hidden">
       <div className="hero hero.align-items-left h-[300px] md:h-[400px] flex items-center justify-center " style={{ backgroundImage: 'url(/img/abtMobile.png)' }}>
         <div className="  text-[#292F36] text-center flex items-end justify-center flex-1 h-full">
           <div className="bg-white py-5 px-20 rounded-t-2xl">
@@ -47,7 +52,7 @@ const Contact = () => {
               <h2 className='text-2xl lg:text-3xl xl:text-4xl font-bold text-left' >
               <TypeAnimation
                 sequence={[
-                  "Have a question ? Let’s get in touch with us.",
+                  "Fill out the form below and a member of our team will get back to you as soon as possible.",
                   1000,
                   
               
@@ -55,7 +60,7 @@ const Contact = () => {
                 speed={30}
                 repeat={10}
               />                </h2>
-              <p className='text-[#5B5B5B] hidden lg:flex text-left' >Fill up the Form  and ou team will get back to within 24 hrs</p>
+              {/* <p className='text-[#5B5B5B] hidden lg:flex text-left' >Fill out the form below and a member of our team will get back to you as soon as possible</p> */}
             </div>
 <div className="flex flex-col justify-center items-center w-full">
 
@@ -72,9 +77,9 @@ const Contact = () => {
               
               <Reveal repeat trigger={<div className="flex flex-col gap-1"/>}>
               <FadeInRight>
-                <h2 className='text-lg font-bold mb-2' >Location</h2>
-                <p className='text-[#5B5B5B] text-sm md:text-md '>Addis Ababa,</p>
-                <p className='text-[#5B5B5B] text-sm md:text-md'>Ethiopia</p>
+                <h2 className='text-lg md:text-2xl font-bold mb-2' >Location</h2>
+                <p className='text-[#5B5B5B] text-sm md:text-xl '>Addis Ababa,</p>
+                <p className='text-[#5B5B5B] text-sm md:text-xl'>Ethiopia</p>
                 </FadeInRight>
                 </Reveal>
               
@@ -82,16 +87,20 @@ const Contact = () => {
 
               <Reveal repeat trigger={<div className="flex flex-col gap-1"/>}>
               <FadeInRight>
-                <h2 className='text-lg font-bold mb-2' >Contact Us</h2>
-                <p className='text-[#5B5B5B] text-sm md:text-md'>+2511911120323</p>
-                <p className='text-[#5B5B5B] text-sm md:text-md'>Info@yourcompany.com</p>
+                <h2 className='text-lg md:text-2xl font-bold mb-2' >Contact Us</h2>
+                <p className='text-[#5B5B5B] text-sm md:text-xl'>+2511911120323</p>
+                <p className='text-[#5B5B5B] text-sm md:text-xl'>nobel.nebil.khuri@gmail.com</p>
                 </FadeInRight>
                 </Reveal>
               {/* </div> */}
             </div>
-            <p className='text-[#5B5B5B] flex mx-auto pb-5 lg:hidden' >Fill up the Form  and ou team will get back to within 24 hrs</p>
+            {/* <p className='text-[#5B5B5B] flex mx-auto pb-5 lg:hidden' >Fill out the form below and a member of our team will get back to you as soon as possible</p> */}
 
-            <iframe width="100%" height="370" id="gmap_canvas" className='rounded-lg h-[300px] lg:h-[370px] lg:mt-0' src="https://maps.google.com/maps?q=addis%20abab%20rang%20building&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameBorder="0" scrolling="no" marginHeight={0} marginWidth={0}></iframe>
+            {/* <iframe width="100%" height="370" id="gmap_canvas" className='rounded-lg h-[300px] lg:h-[370px] lg:mt-0' src="https://maps.google.com/maps?q=addis%20abab%20rang%20building&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameBorder="0" scrolling="no" marginHeight={0} marginWidth={0}></iframe> */}
+        
+            <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7881.001914277721!2d38.797061269131234!3d9.017981999988724!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMDEnMDQuNyJOIDM4wrA0Nyc0OS40IkU!5e0!3m2!1sen!2set!4v1699451967165!5m2!1sen!2set" 
+width="100%" height="370" id="gmap_canvas" className='rounded-lg h-[300px] lg:h-[370px] lg:mt-0' allowFullScreen loading="lazy" 
+ frameBorder="0" scrolling="no" marginHeight={0} marginWidth={0}></iframe>
           </div>
 
         </div>

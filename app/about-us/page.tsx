@@ -6,7 +6,7 @@ import { TypeAnimation } from 'react-type-animation'
 // https://epoxy-ochre.vercel.app/
 const AboutUS = () => {
   return (
-    <div className="">
+    <div className="max-w-[100%] overflow-hidden">
       <div className="hero hero.align-items-left h-[300px] md:h-[400px] flex items-center justify-center " style={{ backgroundImage: 'url(/img/abtMobile.png)' }}>
         <div className="  text-[#292F36] text-center flex items-end justify-center flex-1 h-full">
           <div className="bg-white py-5 px-20 rounded-t-2xl">
@@ -68,12 +68,18 @@ const AboutUS = () => {
         </div>
         <div className=" flex flex-col gap-5">
 
-        <h2 className='text-4xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-center'>Contact Us</h2>
-        <h2 className='text-center' >Contact us today to learn more about our services and how we can help transform your space.</h2>
+        <h2 className='text-4xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-left md:text-center'>Contact Us</h2>
+        <h2 className='text-left md:text-center' >Contact us today to learn more about our services and how we can help transform your space.</h2>
         </div>
         <div className="flex flex-col lg:flex-row gap-10 2xl:gap-14 w-full">
           <div className="map flex w-full lg:w-[50%]">
-            <iframe width="100%" height="450" id="gmap_canvas" className='rounded-lg' src="https://maps.google.com/maps?q=addis%20abab%20rang%20building&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameBorder="0" scrolling="no" marginHeight={0} marginWidth={0}></iframe>
+            {/* <iframe width="100%" height="450" id="gmap_canvas" className='rounded-lg' 
+            src="https://maps.google.com/maps?q=addis%20abab%20rang%20building&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=&amp;output=embed" 
+            frameBorder="0" scrolling="no" marginHeight={0} marginWidth={0}></iframe> */}
+<iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7881.001914277721!2d38.797061269131234!3d9.017981999988724!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMDEnMDQuNyJOIDM4wrA0Nyc0OS40IkU!5e0!3m2!1sen!2set!4v1699451967165!5m2!1sen!2set" 
+width="100%" height="450" id="gmap_canvas" className='rounded-lg' allowFullScreen loading="lazy" 
+ frameBorder="0" scrolling="no" marginHeight={0} marginWidth={0}></iframe>
+
           </div>
           <div className="flex flex-col w-full lg:w-[50%] gap-4 justify-center items-center">
             <input type="text" placeholder="First Name" style={{ background: " rgba(210.28, 217.75, 236.94, 0.17)", borderRadius: "27px" }} className="  input w-full md rounded-full max-w-[25rem]  lg:max-w-[100%] mb-2" />

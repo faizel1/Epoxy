@@ -72,7 +72,7 @@ export default function Home() {
               <p>What we do?</p>
             </FadeInRight>
           </Reveal>
-          <Reveal repeat trigger={<div className='w-full md:w-[50%] text-left text-md font-bold' />}>
+          <Reveal repeat trigger={<div className='w-full md:w-[50%] text-left text-md' />}>
             <FadeInLeft>
               <p >Our company specializes in providing top-quality Epoxy flooring services for a variety of industries and applications. From commercial and industrial spaces to residential homes, we offer a wide range of customizable options to meet your specific needs.</p>
             </FadeInLeft>
@@ -83,24 +83,24 @@ export default function Home() {
       {/* check out section end */}
       {/* card section */}
       <div className="bg-[#FEF3E6] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full py-12 gap-8 px-7 xl:px-44 2xl:44">
-     
-            <ServiceCard
-              image='/img/ServiceCardIcon1.png'
-              title={`Basements floors & 
+
+        <ServiceCard
+          image='/img/ServiceCardIcon1.png'
+          title={`Basements floors & 
             retention walls`}
-              desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, ' />
-       
+          desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, ' />
+
         <ServiceCard
           image='/img/ServiceCardIcon2.png'
           title='Roof top and terrace area work with Seloflex(sika Raintite)'
           desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, ' />
-     
-            <ServiceCard
-              image='/img/ServiceCardIcon3.png'
-              title='Basements floors &retention walls'
-              desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, ' />
 
-     
+        <ServiceCard
+          image='/img/ServiceCardIcon3.png'
+          title='Basements floors &retention walls'
+          desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, ' />
+
+
         {/* card section end */}
 
 
@@ -122,9 +122,9 @@ export default function Home() {
 
           <img loading='lazy' src={"/img/HomeFooterImage.png"} width={300} height={500} className='w-[100%] h-[100%]' alt='intro Image' />
         </div>
-        <div className="w-[100%] lg:w-[50%] flex flex-col pl-10 pt-10 lg:pl-20 mb-10 lg:mb-0 lg:pt-20 max-w-md xl:max-w-2xl gap-5 ">
-          <h2 className='text-4xl xl:text-5xl text-white font-bold font-Poppins ' >Contact us today to learn more about our services and how we can help transform your space.</h2>
-          <button className="btn border-none bg-white text-[14px] w-fit normal-case px-10  text-[#F58A07] rounded-full">Call +251930632722</button>
+        <div className="w-[100%] lg:w-[50%] flex flex-col pl-10 pt-10 lg:pl-20 mb-10 lg:mb-0 lg:pt-20 max-w-md xl:max-w-2xl gap-5 lg:gap-20 ">
+          <h2 className='text-2xl md:text:4xl xl:text-4xl text-white font-bold font-Poppins ' >Contact us today to learn more about our services and how we can help transform your space.</h2>
+          <button className="btn border-none bg-white text-[14px] w-fit normal-case px-10  text-[#F58A07] rounded-full">Call +251 11 659 3154</button>
 
         </div>
       </div>

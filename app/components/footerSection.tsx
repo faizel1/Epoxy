@@ -26,36 +26,36 @@ const FooterSection = () => {
             <div className="flex gap-20 md:hidden">
                 <div className="flex flex-col gap-5 font-bold">
 
-                    <h2 className="text-lg ">Company</h2>
-                    <Link href={"#"} className="link link-hover text-base">About Us</Link>
-                    <Link href={"#"} className="link link-hover text-base">Gallery</Link>
-                    <Link href={"#"} className="link link-hover text-base">Contact Us</Link>
+                    <h2 className="text-lg font-bold ">Company</h2>
+                    <Link href={"/about-us"} className="link link-hover text-base">About Us</Link>
+                    <Link href={"/gallery"} className="link link-hover text-base">Gallery</Link>
+                    <Link href={"/contact-us"} className="link link-hover text-base">Contact Us</Link>
                 </div>
                 <div className="flex flex-col gap-5 font-bold">
 
-                    <h2 className="text-lg ">Connect</h2>
-                    <Link href={"#"} className="link link-hover text-base">hi@finsweet.com</Link>
-                    <Link href={"#"} className="link link-hover text-base">+(123) 456-7890</Link>
+                    <h2 className="text-lg font-bold">Connect</h2>
+                    <button className="link link-hover text-base">nobel.nebil.khuri@gmail.com</button>
+                    <button className="link link-hover text-base">+251 11 659 3154</button>
                 </div>
 
 
             </div>
             <nav className='hidden md:grid' >
-                <header className="text-lg  ">Company</header>
+                <header className="text-xl font-bold ">Company</header>
                 <Link href={"#"} className="link link-hover text-base">About Us</Link>
                 <Link href={"#"} className="link link-hover text-base">Gallery</Link>
                 <Link href={"#"} className="link link-hover text-base">Contact Us</Link>
             </nav>
             <nav className='hidden md:grid'>
-                <header className="text-lg ">Connect</header>
-                <Link href={"#"} className="link link-hover text-base">hi@finsweet.com</Link>
-                <Link href={"#"} className="link link-hover text-base">+(123) 456-7890</Link>
+                <header className="text-xl font-bold ">Connect</header>
+                <button  className="link link-hover text-base">nobel.nebil.khuri@gmail.com</button>
+                <button  className="link link-hover text-base">+251 11 659 3154</button>
 
             </nav>
             <nav className='w-full' >
                 <header className="text-lg font-bold">Join Newsletter</header>
                 <input type="text" placeholder="Type email here" className=" input w-full md rounded-full max-w-[25rem]  lg:max-w-[18rem] mb-2" />
-                <button className="btn border-none text-white text-[16px] font-bold normal-case px-10  bg-[#F58A07] rounded-full">Subscribe</button>
+                <button className="btn border-none text-white text-[16px] font-bold normal-case px-10  bg-[#F58A07] rounded-full min-w-[12rem]">Subscribe</button>
 
                 <div className="flex ml-5 mt-10 md:mt-[7rem] gap-10">
                     <Link href={"#"} className="link link-hover text-base font-bold">Privacy Policy</Link>

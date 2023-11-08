@@ -1,7 +1,9 @@
+
 /* eslint-disable @next/next/no-img-element */
+'use client';
 import React from 'react'
-import Slideshow from '../components/Slideshow'
-import Testimonial from '../components/Testimonial';
+
+import { Reveal, Tween } from 'react-gsap';
 
 const images = [
   '/img/slide1.png',
@@ -36,9 +38,26 @@ const data = [
 ];
 
 const Gallery = () => {
+
+  const FadeInLeft = ({ children }: any) => {
+    return (
+      <Tween from={{ x: '-500', opacity: 0 }} to={{ x: '0', opacity: 1 }}>
+        {children}
+      </Tween>
+    )
+  }
+
+  const FadeInRight = ({ children }: any) => {
+    return (
+      <Tween from={{ x: '500', opacity: 0 }} to={{ x: '0', opacity: 1 }}>
+        {children}
+      </Tween>
+    )
+  }
+
   return (
 
-    <div className="">
+    <div className="max-w-[100%] overflow-hidden ">
 
 
       <div className="hero hero.align-items-left h-[300px] md:h-[400px] flex items-center justify-center " style={{ backgroundImage: 'url(/img/abtHero.png)' }}>
@@ -55,54 +74,70 @@ const Gallery = () => {
 
 
         <div className="image-container">
-          <div className="">
+          <Reveal repeat trigger={<div />}>
+            <FadeInLeft>
 
-            <img src="/gallery/flooring/01.png" alt="" />
-            <p className="mb-3">Epoxy Flooring</p>
-          </div>
-          <div className="">
+              <img src="/gallery/flooring/01.png" alt="" />
+              <p className="mb-3">Epoxy Flooring</p>
+            </FadeInLeft>
+          </Reveal>
+          <Reveal repeat trigger={<div />}>
+            <FadeInLeft>
 
-            <img src="/gallery/flooring/04.png" alt="" />
-            <p className="mb-3">Epoxy Flooring</p>
+              <img src="/gallery/flooring/04.png" alt="" />
+              <p className="mb-3">Epoxy Flooring</p>
 
-          </div>
-          <div className="">
+            </FadeInLeft>
+          </Reveal>
+          <Reveal repeat trigger={<div />}>
+            <FadeInLeft>
 
-            <img src="/gallery/flooring/08.png" alt="" />
-            <p className="mb-3">Epoxy Flooring</p>
+              <img src="/gallery/flooring/08.png" alt="" />
+              <p className="mb-3">Epoxy Flooring</p>
 
-          </div>
-          <div className="">
+            </FadeInLeft>
+          </Reveal>
+          <Reveal repeat trigger={<div />}>
+            <FadeInLeft>
 
-            <img src="/gallery/flooring/06.png" alt="" />
-            <p className="mb-3">Epoxy Flooring</p>
+              <img src="/gallery/flooring/06.png" alt="" />
+              <p className="mb-3">Epoxy Flooring</p>
 
-          </div>
-          <div className="">
+            </FadeInLeft>
+          </Reveal>
+          <Reveal repeat trigger={<div />}>
+            <FadeInRight>
 
-            <img src="/gallery/flooring/02.png" alt="" />
-            <p className="mb-3">Epoxy Flooring</p>
+              <img src="/gallery/flooring/02.png" alt="" />
+              <p className="mb-3">Epoxy Flooring</p>
 
-          </div>
+            </FadeInRight>
+          </Reveal>
 
-          <div className="">
+          <Reveal repeat trigger={<div />}>
+            <FadeInRight>
 
-            <img src="/gallery/flooring/03.png" alt="" />
-            <p className="mb-3">Epoxy Flooring</p>
+              <img src="/gallery/flooring/03.png" alt="" />
+              <p className="mb-3">Epoxy Flooring</p>
 
-          </div>
-          <div className="">
+            </FadeInRight>
+          </Reveal>
+          <Reveal repeat trigger={<div />}>
+            <FadeInRight>
 
-            <img src="/gallery/flooring/07.png" alt="" />
-            <p className="mb-3">Epoxy Flooring</p>
+              <img src="/gallery/flooring/07.png" alt="" />
+              <p className="mb-3">Epoxy Flooring</p>
 
-          </div>
-          <div className="">
+            </FadeInRight>
+          </Reveal>
+          <Reveal repeat trigger={<div />}>
+            <FadeInRight>
 
-            <img src="/gallery/flooring/05.png" alt="" />
-            <p className="mb-0">Minimal Bedroom table</p>
+              <img src="/gallery/flooring/05.png" alt="" />
+              <p className="mb-0">Minimal Bedroom table</p>
 
-          </div>
+            </FadeInRight>
+          </Reveal>
 
         </div>
 
