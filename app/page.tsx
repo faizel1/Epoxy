@@ -8,8 +8,6 @@ import ImageSlider from './components/ImageSlider'
 import Slideshow from './components/Slideshow'
 import Testimonial from './components/Testimonial'
 import { Reveal, Tween } from 'react-gsap';
-import { useEffect } from 'react'
-import { gsap } from 'gsap'
 const FadeInLeft = ({ children }: any) => {
   return (
     <Tween from={{ x: '-500', opacity: 0 }} to={{ x: '0', opacity: 1 }}>
@@ -47,8 +45,8 @@ export default function Home() {
           <div className='w-full md:w-[50%]'>
             <Reveal repeat trigger={<div />}>
               <FadeInLeft>
-                <p className='text-4xl md:text-3xl lg:text-4xl xl:text-6xl font-semibold md:py-10'>Lorem ipsum dolor sit amet consectetur. Nunc libero amet sem blandit. Laoreet.</p>
-                <p className='py-5 md:py-10 text-lg text-[#5B5B5B]' >Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /> Aliquam leo odio, sagittis quis ornare quis.</p>
+                <p className='text-4xl md:text-3xl lg:text-4xl xl:text-6xl font-semibold md:py-10'>Cost-effective design, supply & installation.</p>
+                <p className='py-5 md:py-10 text-lg text-[#5B5B5B]' >As one of the leading Epoxy flooring companies based in Ethiopia, we customise our epoxy flooring solutions to fit your specific needs and budget, whether for residential or commercial use. Contact us on 0930632722 to speak with our team and discuss your requirements.</p>
                 <button className="btn border-none text-white text-[14px] normal-case px-10  bg-[#F58A07] rounded-full">Work With Us</button>
 
               </FadeInLeft>
@@ -71,13 +69,12 @@ export default function Home() {
         <div className="flex flex-col md:flex-row justify-start gap-5 md:gap-0 xl:gap-20">
           <Reveal repeat trigger={<div className='w-full md:w-[50%] text-3xl font-bold text-[#0D1317]' />}>
             <FadeInRight>
-              <p>Check out <br className='hidden md:block' />
-                Our services</p>
+              <p>What we do?</p>
             </FadeInRight>
           </Reveal>
           <Reveal repeat trigger={<div className='w-full md:w-[50%] text-left text-md font-bold' />}>
             <FadeInLeft>
-              <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.</p>
+              <p >Our company specializes in providing top-quality Epoxy flooring services for a variety of industries and applications. From commercial and industrial spaces to residential homes, we offer a wide range of customizable options to meet your specific needs.</p>
             </FadeInLeft>
           </Reveal>
         </div>
@@ -125,9 +122,9 @@ export default function Home() {
 
           <img loading='lazy' src={"/img/HomeFooterImage.png"} width={300} height={500} className='w-[100%] h-[100%]' alt='intro Image' />
         </div>
-        <div className="w-[100%] lg:w-[50%] flex flex-col pl-10 pt-10 lg:pl-20 mb-10 lg:mb-0 lg:pt-20 max-w-md xl:max-w-xl gap-5 ">
-          <h2 className='text-4xl xl:text-5xl text-white font-bold font-Poppins ' >Lorem ipsum dolor sit amet consectetur. Nunc libero amet sem</h2>
-          <button className="btn border-none bg-white text-[14px] w-fit normal-case px-10  text-[#F58A07] rounded-full">Call +251911120323</button>
+        <div className="w-[100%] lg:w-[50%] flex flex-col pl-10 pt-10 lg:pl-20 mb-10 lg:mb-0 lg:pt-20 max-w-md xl:max-w-2xl gap-5 ">
+          <h2 className='text-4xl xl:text-5xl text-white font-bold font-Poppins ' >Contact us today to learn more about our services and how we can help transform your space.</h2>
+          <button className="btn border-none bg-white text-[14px] w-fit normal-case px-10  text-[#F58A07] rounded-full">Call +251930632722</button>
 
         </div>
       </div>

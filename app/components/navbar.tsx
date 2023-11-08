@@ -47,7 +47,7 @@ const Navbar = () => {
 
 
                     <div className={`${menuOpen && "hidden"} md:hidden items-center mr-4 space-x-4 ml-4  sm:mr-0 sm:ml-8 lg:ml-12`}>
-                        <p className="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded-full   text-[10px]  sm-[16px] bg-[#F58A071A] text-[#F58A07]">Call +251911120323</p>
+                        <p className="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded-full   text-[10px]  sm-[16px] bg-[#F58A071A] text-[#F58A07]">Call +251930632722</p>
 
                     </div>
 
@@ -70,7 +70,7 @@ const Navbar = () => {
 
 
                     <div className="hidden md:flex items-center md:ml-0 lg:mr-8 space-x-4 sm:mr-0 sm:ml-8 lg:ml-12">
-                        <p className="text-text-gray-600  py-4 px-8 hover:cursor-pointer font-bold rounded-full   text-[18px]  sm-[16px] bg-[#F58A071A] text-[#F58A07]">Call +251911120323</p>
+                        <p className="text-text-gray-600  py-4 px-8 hover:cursor-pointer font-bold rounded-full   text-[18px]  sm-[16px] bg-[#F58A071A] text-[#F58A07]">Call +251930632722</p>
 
                     </div>
                 </div>

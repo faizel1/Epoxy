@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 // https://epoxy-ochre.vercel.app/
@@ -11,7 +12,7 @@ const AboutUS = () => {
           <div className="bg-white py-5 px-20 rounded-t-2xl">
 
             <h1 className='text-2xl lg:text-5xl font-bold' >About Us</h1>
-            <h3 className='text-md lg:text-xl font-extralight' >Home/About Us</h3>
+            <h3 className='text-md lg:text-xl font-extralight' >Home / About Us</h3>
           </div>
         </div>
       </div>
@@ -32,9 +33,8 @@ const AboutUS = () => {
 
               repeat={Infinity}
             />
-            <p className='py-5 md:py-10 text-lg text-[#5B5B5B]' >Lorem ipsum dolor sit amet consectetur. Erat nisi id sollicitudin risus justo eros egestas aliquam. In sit amet in tortor maecenas cursus libero elit. Pellentesque leo eget auctor lorem arcu viverra. Facilisi hac faucibus risus sapien id id.
-              A pellentesque luctus dignissim proin tortor dis sem. Eu nunc blandit sed at vitae nibh odio. Egestas et et vivamus a mi. Posuere pellentesque eros fames at at in mattis. Vel orci et dignissim enim tortor. Eros mattis tincidunt ac vestibulum platea. Praesent.</p>
-            <button className="btn border-none text-white text-[14px] normal-case px-10 mx-auto lg:float-left flex bg-[#F58A07] rounded-full">Work With Us</button>
+            <p className='py-5 md:py-10 text-lg text-[#5B5B5B]' >Our company specializes in providing top-quality Epoxy flooring services for a variety of industries and applications. From commercial and industrial spaces to residential homes, we offer a wide range of customizable options to meet your specific needs. Our highly skilled team of professionals is dedicated to delivering exceptional results, using only the best materials and techniques available.</p>
+            <Link href={"/contact-us"} className="btn border-none text-white text-[14px] normal-case px-10 mx-auto lg:float-left flex bg-[#F58A07] rounded-full">Work With Us</Link>
 
           </div>
           <div className='w-full md:w-[50%] order-1 md:order-2'>
@@ -60,14 +60,17 @@ const AboutUS = () => {
             cursor={false}
 
             />
-            <p className='py-5 md:py-10 text-lg text-[#5B5B5B]' >Lorem ipsum dolor sit amet consectetur. Erat nisi id sollicitudin risus justo eros egestas aliquam. In sit amet in tortor maecenas cursus libero elit. Pellentesque leo eget auctor lorem arcu viverra. Facilisi hac faucibus risus sapien id id.
-              A pellentesque luctus dignissim proin tortor dis sem. Eu nunc blandit sed at vitae nibh odio. Egestas et et vivamus a mi. Posuere pellentesque eros fames at at in mattis. Vel orci et dignissim enim tortor. Eros mattis tincidunt ac vestibulum platea. Praesent.</p>
-            <button className="btn border-none text-white text-[14px] normal-case px-10 mx-auto lg:float-left flex bg-[#F58A07] rounded-full self-end">Work With Us</button>
+            <p className='py-5 md:py-10 text-lg text-[#5B5B5B]' >The end result of our services is a durable, long-lasting, and visually appealing floor that is both easy to clean and maintain. Our epoxy flooring is resistant to stains, chemicals, and abrasions, making it an ideal flooring solution for industrial, commercial, and residential settings.</p>
+            <Link href={"/contact-us"} className="btn border-none text-white text-[14px] normal-case px-10 mx-auto lg:float-left flex bg-[#F58A07] rounded-full self-end"  >Work With Us</Link>
 
           </div>
 
         </div>
+        <div className=" flex flex-col gap-5">
+
         <h2 className='text-4xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-center'>Contact Us</h2>
+        <h2 className='text-center' >Contact us today to learn more about our services and how we can help transform your space.</h2>
+        </div>
         <div className="flex flex-col lg:flex-row gap-10 2xl:gap-14 w-full">
           <div className="map flex w-full lg:w-[50%]">
             <iframe width="100%" height="450" id="gmap_canvas" className='rounded-lg' src="https://maps.google.com/maps?q=addis%20abab%20rang%20building&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameBorder="0" scrolling="no" marginHeight={0} marginWidth={0}></iframe>

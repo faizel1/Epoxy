@@ -20,7 +20,7 @@ const HeroSection = () => {
             <h1 className="mb-5 text-4xl sm:text-6xl text-left font-bold">
               <TypeAnimation
                 sequence={[
-                  "Prosper with our bespoke solutions ",
+                  "Leading epoxy flooring contractor in Ethiopia ",
                   1000,
               
                 ]}
@@ -29,7 +29,7 @@ const HeroSection = () => {
               />
                      
             </h1>
-            <p className="mb-5 text-left ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique</p>
+            <p className="mb-5 text-left ">If you're in search of a reliable and experienced epoxy flooring contractor in Ethiopia, look no further! Our team of experts are dedicated to providing top-notch service and quality workmanship. We use only the best materials and techniques to ensure your flooring is durable, long-lasting, and aesthetically pleasing. </p>
             <div className="my-10 flex items-center justify-start gap-10 ">
 
               <motion.button  animate={{ rotate: 360 }}
