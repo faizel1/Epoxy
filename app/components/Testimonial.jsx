@@ -37,7 +37,7 @@ const Testimonial = () => {
       <div onClick={goPrev} className=" hidden sm:flex items-center px-5">
         <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="28" cy="28" r="28" fill="#FEF3E6" />
-          <path d="M30 20.5L22.5 28L30 35.5" stroke="black" stroke-width="2" />
+          <path d="M30 20.5L22.5 28L30 35.5" stroke="black" strokeWidth="2" />
         </svg>
 
       </div>
@@ -125,7 +125,7 @@ const Testimonial = () => {
       <div onClick={goNext} className="hidden sm:flex items-center px-5">
         <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="28" cy="28" r="28" transform="matrix(-1 0 0 1 56 0)" fill="#FEF3E6" />
-          <path d="M26 20.5L33.5 28L26 35.5" stroke="black" stroke-width="2" />
+          <path d="M26 20.5L33.5 28L26 35.5" stroke="black" strokeWidth="2" />
         </svg>
 
       </div>

@@ -1,4 +1,5 @@
 
+'use client'
 import Image from 'next/image'
 import FooterSection from './components/footerSection'
 import HeroSection from './components/heroSection'
@@ -6,27 +7,59 @@ import ServiceCard from './components/serviceCard'
 import ImageSlider from './components/ImageSlider'
 import Slideshow from './components/Slideshow'
 import Testimonial from './components/Testimonial'
+import { Reveal, Tween } from 'react-gsap';
+import { useEffect } from 'react'
+import { gsap } from 'gsap'
+const FadeInLeft = ({ children }: any) => {
+  return (
+    <Tween from={{ x: '-500', opacity: 0 }} to={{ x: '0', opacity: 1 }}>
+      {children}
+    </Tween>
+  )
+}
 
+const FadeInRight = ({ children }: any) => {
+  return (
+    <Tween from={{ x: '500', opacity: 0 }} to={{ x: '0', opacity: 1 }}>
+      {children}
+    </Tween>
+  )
+}
 
 export default function Home() {
+  //   useEffect(() => {      
+  //     gsap.fromTo('.ball',{opacity:0 }, {opacity: 1 , x: 200 , duration: 3 });
+  //   gsap.fromTo('.square', {opacity:0, x:200}, { opacity:1, x: 1 , duration: 1 });
+  // }, []);
+
   return (
-    <main className='max-w-[1920px] mx-auto' >
+    <main className='max-w-[100vw] overflow-hidden 2xl:max-w-[1920px] mx-auto' >
 
 
       <HeroSection />
+
       <div className="flex flex-col gap-10 md:gap-10 px-7 lg:px-44 py-5 md:py-20">
         {/* intro section */}
 
         <div className="flex flex-col md:flex-row md:py-20 gap-10 sm:gap-5 lg:gap-20 font-Poppins">
-          <div className='w-full md:w-[50%]'>
-            <p className='text-4xl md:text-3xl lg:text-4xl xl:text-6xl font-semibold md:py-10'>Lorem ipsum dolor sit amet consectetur. Nunc libero amet sem blandit. Laoreet.</p>
-            <p className='py-5 md:py-10 text-lg text-[#5B5B5B]' >Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /> Aliquam leo odio, sagittis quis ornare quis.</p>
-            <button className="btn border-none text-white text-[14px] normal-case px-10  bg-[#F58A07] rounded-full">Work With Us</button>
 
+
+          <div className='w-full md:w-[50%]'>
+            <Reveal repeat trigger={<div />}>
+              <FadeInLeft>
+                <p className='text-4xl md:text-3xl lg:text-4xl xl:text-6xl font-semibold md:py-10'>Lorem ipsum dolor sit amet consectetur. Nunc libero amet sem blandit. Laoreet.</p>
+                <p className='py-5 md:py-10 text-lg text-[#5B5B5B]' >Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /> Aliquam leo odio, sagittis quis ornare quis.</p>
+                <button className="btn border-none text-white text-[14px] normal-case px-10  bg-[#F58A07] rounded-full">Work With Us</button>
+
+              </FadeInLeft>
+            </Reveal>
           </div>
           <div className='w-full md:w-[50%]'>
-
-            <Image loading='lazy' src={"/img/homeIntroImage.png"} width={300} height={500} className='w-[100%]' alt='intro Image' />
+            <Reveal repeat trigger={<div />}>
+              <FadeInRight>
+                <Image loading='lazy' src={"/img/homeIntroImage.png"} width={300} height={500} className='w-[100%]' alt='intro Image' />
+              </FadeInRight>
+            </Reveal>
           </div>
         </div>
 
@@ -36,38 +69,48 @@ export default function Home() {
         {/* check out section */}
 
         <div className="flex flex-col md:flex-row justify-start gap-5 md:gap-0 xl:gap-20">
-
-          <p className='w-full md:w-[50%] text-3xl font-bold text-[#0D1317]' >Check out <br className='hidden md:block' />
-            Our services</p>
-          <p className='w-full md:w-[50%] text-left text-md font-bold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.</p>
+          <Reveal repeat trigger={<div className='w-full md:w-[50%] text-3xl font-bold text-[#0D1317]' />}>
+            <FadeInRight>
+              <p>Check out <br className='hidden md:block' />
+                Our services</p>
+            </FadeInRight>
+          </Reveal>
+          <Reveal repeat trigger={<div className='w-full md:w-[50%] text-left text-md font-bold' />}>
+            <FadeInLeft>
+              <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.</p>
+            </FadeInLeft>
+          </Reveal>
         </div>
       </div>
 
       {/* check out section end */}
       {/* card section */}
       <div className="bg-[#FEF3E6] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full py-12 gap-8 px-7 xl:px-44 2xl:44">
-        <ServiceCard
-          image='/img/ServiceCardIcon1.png'
-          title={`Basements floors & 
+     
+            <ServiceCard
+              image='/img/ServiceCardIcon1.png'
+              title={`Basements floors & 
             retention walls`}
-          desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, ' />
+              desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, ' />
+       
         <ServiceCard
           image='/img/ServiceCardIcon2.png'
           title='Roof top and terrace area work with Seloflex(sika Raintite)'
           desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, ' />
-        <ServiceCard
-          image='/img/ServiceCardIcon3.png'
-          title='Basements floors &retention walls'
-          desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, ' />
+     
+            <ServiceCard
+              image='/img/ServiceCardIcon3.png'
+              title='Basements floors &retention walls'
+              desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, ' />
 
-
+     
         {/* card section end */}
 
 
       </div>
       {/* <ImageSlider /> */}
       <div className=" py-10 px-7 xl:px-44 2xl:44">
-      <h2 className='text-center text-4xl pb-5 font-bold' >Gallery</h2>
+        <h2 className='text-center text-4xl pb-5 font-bold' >Gallery</h2>
 
         <Slideshow />
       </div>

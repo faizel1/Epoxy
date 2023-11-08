@@ -17,10 +17,14 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   color: #1D3444;
   font-family: 'Poppins', sans-serif;
+
 }
 
 .hero {

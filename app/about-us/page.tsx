@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
-
+// https://epoxy-ochre.vercel.app/
 const AboutUS = () => {
   return (
     <div className="">
@@ -70,13 +70,13 @@ const AboutUS = () => {
         <h2 className='text-4xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-center'>Contact Us</h2>
         <div className="flex flex-col lg:flex-row gap-10 2xl:gap-14 w-full">
           <div className="map flex w-full lg:w-[50%]">
-            <iframe width="100%" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=addis%20abab%20rang%20building&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameBorder="0" scrolling="no" marginHeight={0} marginWidth={0}></iframe>
+            <iframe width="100%" height="450" id="gmap_canvas" className='rounded-lg' src="https://maps.google.com/maps?q=addis%20abab%20rang%20building&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameBorder="0" scrolling="no" marginHeight={0} marginWidth={0}></iframe>
           </div>
           <div className="flex flex-col w-full lg:w-[50%] gap-4 justify-center items-center">
             <input type="text" placeholder="First Name" style={{ background: " rgba(210.28, 217.75, 236.94, 0.17)", borderRadius: "27px" }} className="  input w-full md rounded-full max-w-[25rem]  lg:max-w-[100%] mb-2" />
             <input type="text" placeholder="Last Name" style={{ background: " rgba(210.28, 217.75, 236.94, 0.17)", borderRadius: "27px" }} className=" input w-full md rounded-full max-w-[25rem]  lg:max-w-[100%] mb-2" />
             <input type="text" placeholder="Email Address" style={{ background: " rgba(210.28, 217.75, 236.94, 0.17)", borderRadius: "27px" }} className=" input w-full md rounded-full max-w-[25rem]  lg:max-w-[100%] mb-2" />
-            <textarea placeholder="Type Message" style={{ background: " rgba(210.28, 217.75, 236.94, 0.17)", borderRadius: "27px" }} className="p-3 pt-5 h-40 input w-full md rounded-full max-w-[25rem]  lg:max-w-[100%] mb-2" />
+            <textarea placeholder="Type Message" style={{ background: " rgba(210.28, 217.75, 236.94, 0.17)", borderRadius: "10px" }} className="p-3 pt-5 h-40 input w-full md rounded-full max-w-[25rem]  lg:max-w-[100%] mb-2" />
             <button className=" btn border-none w-full max-w-[25rem] lg:max-w-[15rem] text-white text-[16px] font-bold normal-case px-10  bg-[#F58A07] rounded-full">Submit</button>
 
           </div>

@@ -24,7 +24,7 @@ const HeroSection = () => {
                   1000,
               
                 ]}
-                speed={50}
+                speed={30}
                 repeat={10}
               />
                      
