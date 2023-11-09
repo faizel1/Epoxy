@@ -160,7 +160,7 @@ function Slideshow() {
 
       </Swiper>
 
-      <div className="flex gap-5 py-5  items-center">
+      <div className="flex gap-5 py-5  items-center justify-end md:justify-start">
         <button onClick={goPrev}>
           <svg width="57" height="55" viewBox="0 0 57 55" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect y="0.679199" width="57" height="53.9171" rx="25" fill="url(#paint0_linear_7_4438)" />
@@ -193,7 +193,7 @@ function Slideshow() {
           </svg>
 
         </button>
-        <div className="progress" style={{ width: `${progress}%` }}></div>
+        <div className="progress hidden sm:block" style={{ width: `${progress}%` }}></div>
 
       </div>
     </div>

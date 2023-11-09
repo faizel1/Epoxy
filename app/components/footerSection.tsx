@@ -1,10 +1,19 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const FooterSection = () => {
+    const handlePhoneClick = () => {
+        window.location.href = `tel:+251116593154`;
+    };
+
+    const handleEmailClick = () => {
+        window.location.href = `mailto:nobel.nebil.khuri@gmail.com`;
+    };
+
     return (
-        <footer className="relative footer p-10 py-20 bg-black  text-white overflow-hidden ">
+        <footer className="relative footer p-5 md:p-10 py-20 bg-black  text-white overflow-hidden max-w-[100%] ">
 
             <span className="hidden   absolute h-[144px] w-[45px] left-0 bottom-[-5px] rounded-r-xl lg:block  bg-[#F58A07]"></span>
             <span className="absolute h-[200px] lg:h-[287px] w-[35px] lg:w-[45px] top-0 md:top-10 right-0 rounded-l-2xl block  bg-[#F58A07]"></span>
@@ -23,7 +32,7 @@ const FooterSection = () => {
 
             </aside>
 
-            <div className="flex gap-20 md:hidden">
+            <div className="flex mx-auto md:hidden">
                 <div className="flex flex-col gap-5 font-bold">
 
                     <h2 className="text-lg font-bold ">Company</h2>
@@ -34,8 +43,8 @@ const FooterSection = () => {
                 <div className="flex flex-col gap-5 font-bold">
 
                     <h2 className="text-lg font-bold">Connect</h2>
-                    <button className="link link-hover text-base">nobel.nebil.khuri@gmail.com</button>
-                    <button className="link link-hover text-base">+251 11 659 3154</button>
+                    <button className=" text-base cursor-pointer" onClick={handleEmailClick} >nobel.nebil.khuri@gmail.com</button>
+                    <button className=" text-base cursor-pointer text-left" onClick={handlePhoneClick}>+251116593154</button>
                 </div>
 
 
@@ -48,8 +57,8 @@ const FooterSection = () => {
             </nav>
             <nav className='hidden md:grid'>
                 <header className="text-xl font-bold ">Connect</header>
-                <button  className="link link-hover text-base">nobel.nebil.khuri@gmail.com</button>
-                <button  className="link link-hover text-base">+251 11 659 3154</button>
+                <button  className="text-base cursor-pointer" onClick={handleEmailClick}>nobel.nebil.khuri@gmail.com</button>
+                <button  className="text-base cursor-pointer" onClick={handlePhoneClick}>+251116593154</button>
 
             </nav>
             <nav className='w-full' >
