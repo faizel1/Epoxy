@@ -78,11 +78,7 @@ export default function Home() {
         {/* check out section */}
 
         <div className="flex flex-col md:flex-row justify-start gap-5 md:gap-0 xl:gap-20">
-          <Reveal repeat trigger={<div className='w-full md:w-[50%] text-3xl font-bold text-[#0D1317]' />}>
-            <FadeInRight>
-              <p>What we do?</p>
-            </FadeInRight>
-          </Reveal>
+     
           <Reveal repeat trigger={<div className='w-full md:w-[50%] text-left text-md' />}>
             <FadeInLeft>
               <p >Our company specializes in providing top-quality Epoxy flooring services for a variety of industries and applications. From commercial and industrial spaces to residential homes, we offer a wide range of customizable options to meet your specific needs.</p>

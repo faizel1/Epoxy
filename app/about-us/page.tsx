@@ -39,7 +39,7 @@ const AboutUS = () => {
           </div>
           <div className='w-full md:w-[50%] order-1 md:order-2'>
 
-            <img loading='lazy' src={"/img/abtOne.png"} width={300} height={500} className='w-[100%] max-h-[650px]' alt='intro Image' />
+            <img loading='lazy' src={"/img/abt1.jpeg"} width={300} height={500} className='w-[100%] max-h-[650px]' alt='intro Image' />
           </div>
         </div>
 
@@ -47,7 +47,7 @@ const AboutUS = () => {
         <div className="flex flex-col md:flex-row md:pb-5 gap-10 sm:gap-5 lg:gap-20 font-Poppins">
           <div className='w-full md:w-[50%]'>
 
-            <img loading='lazy' src={"/img/abtTwo.png"} width={300} height={500} className='w-[100%] max-h-[650px]' alt='intro Image' />
+            <img loading='lazy' src={"/img/abt2.jpeg"} width={300} height={500} className='w-[100%] max-h-[650px]' alt='intro Image' />
           </div>
           <div className='w-full md:w-[50%]'>
             <TypeAnimation 

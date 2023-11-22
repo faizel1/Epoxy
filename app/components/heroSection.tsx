@@ -33,9 +33,9 @@ const HeroSection = () => {
 
 <div>
     </div>
-      <div className="hero hero.align-items-left min-h-[calc(100vh-80px)] md:min-h-[calc(100vh-115px)] " style={{ backgroundImage: 'url(/img/heroEp.png)' }}>
+      <div className="hero hero.align-items-left min-h-[calc(100vh)] md:min-h-[calc(101vh-0px)] " style={{ backgroundImage: 'url(/img/heroEp.png)' }}>
         <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content text-center text-neutral-content mt-20">
+        <div className="hero-content text-center text-neutral-content mt-40 md:mt-20">
           <div className="w-full md:max-w-[40rem]">
             <h1 className="mb-5 text-4xl sm:text-6xl text-left font-bold">
               <TypeAnimation
