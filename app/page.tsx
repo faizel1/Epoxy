@@ -98,34 +98,29 @@ export default function Home() {
 
         <ServiceCard
           image='/img/ServiceCardIcon1.png'
-          title={`Basements floors & 
-            retention walls`}
-          desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, ' />
+          title={`Industry chemicals`}
+          desc='Our company specializes in importing high-quality industry chemicals from abroad to Ethiopia. As a result, we are able to provide a wide range of chemical products to meet the needs of various industries. Whether you are in need of chemicals for manufacturing, construction, or agriculture, we have you covered.' />
 
         <ServiceCard
           image='/img/ServiceCardIcon2.png'
-          title='Roof top and terrace area work with Seloflex(sika Raintite)'
-          desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, ' />
+          title='Membrane'
+          desc='Our company is dedicated to importing high-quality membrane products from abroad to Ethiopia. We understand the importance of having access to reliable and efficient membrane technology, which is why we strive to provide our customers with the best products available on the market. With our commitment to excellence, you can trust us to deliver top-notch membrane solutions for all your needs.' />
 
         <ServiceCard
           image='/img/ServiceCardIcon3.png'
-          title='Basements floors &retention walls'
-          desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, ' />
+          title='Stainless Steel'
+          desc={`Stainless steel has become an essential material in today's world due to its durability and resistance to corrosion. It is used in various industries, such as construction, automotive, and healthcare. Our company specializes in importing stainless steel products from abroad to meet the increasing demand for this versatile material.`} />
           <ServiceCard
           image='/img/ServiceCardIcon1.png'
-          title={`Basements floors & 
-            retention walls`}
-          desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, ' />
+          title={`Aluminum`}
+          desc='Our company specializes in importing high-quality aluminum products from various countries. Our products are carefully selected to meet the needs and requirements of our clients. We take pride in providing durable and reliable aluminum products for various industries.' />
 
         <ServiceCard
           image='/img/ServiceCardIcon2.png'
-          title='Roof top and terrace area work with Seloflex(sika Raintite)'
-          desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, ' />
+          title='Goat meat'
+          desc='Goat meat, also known as mutton, is a popular meat consumed in many countries worldwide. Our company specializes in exporting high-quality goat meat to various international markets. From tender and juicy cuts to flavorful and aromatic meat, we take pride in delivering the best goat meat to our customers.' />
 
-        <ServiceCard
-          image='/img/ServiceCardIcon3.png'
-          title='Basements floors &retention walls'
-          desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, ' />
+      
 
 
         {/* card section end */}
