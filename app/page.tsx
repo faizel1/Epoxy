@@ -1,10 +1,8 @@
 
 'use client'
 import Image from 'next/image'
-import FooterSection from './components/footerSection'
 import HeroSection from './components/heroSection'
 import ServiceCard from './components/serviceCard'
-import ImageSlider from './components/ImageSlider'
 import Slideshow from './components/Slideshow'
 import Testimonial from './components/Testimonial'
 import { Reveal, Tween } from 'react-gsap';
@@ -52,7 +50,7 @@ export default function Home() {
           <div className='w-full md:w-[50%]'>
             <Reveal repeat trigger={<div />}>
               <FadeInLeft>
-                <p className='text-4xl md:text-3xl lg:text-4xl xl:text-6xl font-semibold md:py-5'>Cost-effective design, supply & installation.</p>
+                <p className='text-4xl md:text-3xl lg:text-4xl xl:text-6xl font-semibold md:py-5 text-[#F58A07]'>Cost-effective design, supply & installation.</p>
                 <p className='py-5 md:pb-10 text-lg text-[#5B5B5B]' >When it comes to designing, supplying, and installing epoxy flooring, it&apos;s essential to consider the cost-effectiveness of the whole process.That&apos;s where our expertise comes in. With over 14 years of experience in the industry, we are the best at what we do. Our team of professionals is dedicated to providing exceptional services to our clients, both in Germany and Addis Ababa, Ethiopia. <br /><br /> 
                   Our cost-effective approach to epoxy flooring design, supply, and installation ensures that our clients get the best value for their money. We use only high-quality materials and the latest techniques in the industry to create durable and long-lasting floors that can withstand heavy traffic and harsh conditions. Our team is committed to providing a hassle-free experience, from the initial consultation to the final walkthrough.
                   <br /><br />
@@ -66,7 +64,7 @@ export default function Home() {
           <div className='w-full md:w-[50%]'>
             <Reveal repeat trigger={<div />}>
               <FadeInRight>
-                <Image loading='lazy' src={"/img/homeIntroImage.png"} width={300} height={500} className='w-[100%]' alt='intro Image' />
+                <Image loading='lazy' src={"/img/homeIntroImage.webp"} width={300} height={500} className='w-[100%]' alt='intro Image' />
               </FadeInRight>
             </Reveal>
           </div>
@@ -81,12 +79,12 @@ export default function Home() {
      
         <Reveal repeat trigger={<div className='w-full md:w-[50%] text-3xl font-bold text-[#0D1317]' />}>
             <FadeInRight>
-              <p>What we do?</p>
+              <p className='text-[#F58A07] text-center  md:text-left' >What we do?</p>
             </FadeInRight>
           </Reveal>
           <Reveal repeat trigger={<div className='w-full md:w-[50%] text-left text-md' />}>
             <FadeInLeft>
-              <p >Our company specializes in providing top-quality Epoxy flooring services for a variety of industries and applications. From commercial and industrial spaces to residential homes, we offer a wide range of customizable options to meet your specific needs.</p>
+              <p className='text-[18px] text-[#5B5B5B]'>Our company specializes in providing top-quality Epoxy flooring services for a variety of industries and applications. From commercial and industrial spaces to residential homes, we offer a wide range of customizable options to meet your specific needs.</p>
             </FadeInLeft>
           </Reveal>
         </div>
@@ -129,12 +127,12 @@ export default function Home() {
       </div>
       {/* <ImageSlider /> */}
       <div className=" py-10 px-7 xl:px-44 2xl:44">
-        <h2 className='text-center text-4xl pb-5 font-bold' >Gallery</h2>
+        <h2 className='text-center text-4xl pb-5 font-bold text-[#F58A07]' >Gallery</h2>
 
         <Slideshow />
       </div>
       <div className="md:pb-10 px-7 xl:px-[6.5rem] ">
-        <h2 className='text-center text-4xl pb-5 font-bold' >Testimonials</h2>
+        <h2 className='text-center text-4xl pb-5 font-bold text-[#F58A07]' >Testimonials</h2>
         <Testimonial />
 
       </div>
@@ -142,7 +140,7 @@ export default function Home() {
       <div className="flex flex-col md:flex-row bg-[#F58A07]">
         <div className="w-[100%] lg:w-[50%]">
 
-          <img loading='lazy' src={"/img/HomeFooterImage.png"} width={300} height={500} className='w-[100%] h-[100%]' alt='intro Image' />
+          <img loading='lazy' src={"/img/HomeFooterImage.webp"} width={300} height={500} className='w-[100%] h-[100%]' alt='intro Image' />
         </div>
         <div className="w-[100%] lg:w-[50%] flex flex-col px-7 pt-10 lg:pl-20 mb-10 lg:mb-0 lg:pt-20 max-w-md xl:max-w-2xl gap-5 lg:gap-20 ">
           <h2 className='text-2xl md:text:4xl xl:text-4xl text-white font-bold font-Poppins ' >Contact us today to learn more about our services and how we can help transform your space.</h2>

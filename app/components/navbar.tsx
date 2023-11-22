@@ -63,8 +63,8 @@ const Navbar = () => {
 
                             <Link className={` hover:text-[#F58A07] text-md md:text-xl font-bold ${currentRoute === '/about-us' ? 'text-[#F58A07]' : 'text-[#fff]'} `} href={"/about-us"}>About Us </Link>
                             <Link className={` hover:text-[#F58A07] text-md md:text-xl font-bold ${currentRoute === '/gallery' ? 'text-[#F58A07]' : 'text-[#fff]'} `} href={"/gallery"}>Gallery</Link>
-                            <Link className={` hover:text-[#F58A07] text-md md:text-xl font-bold ${currentRoute === '/contact-us' ? 'text-[#F58A07]' : 'text-[#fff]'} `} href={"/contact-us"}>Contact Us</Link>
                             <Link className={` hover:text-[#F58A07] text-md md:text-xl font-bold ${currentRoute === '/charity' ? 'text-[#F58A07]' : 'text-[#fff]'} `} href={"/charity"}>Charity</Link>
+                            <Link className={` hover:text-[#F58A07] text-md md:text-xl font-bold ${currentRoute === '/contact-us' ? 'text-[#F58A07]' : 'text-[#fff]'} `} href={"/contact-us"}>Contact Us</Link>
                         </ul>
 
 
