@@ -34,7 +34,7 @@ const Charity = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-10 md:gap-20 px-7 lg:px-44 py-5 md:py-20">
+      <div className="flex flex-col gap-4 md:gap-20 px-7 lg:px-44 py-5 md:py-20">
         <div className="flex flex-col md:flex-row md:pt-10  gap-10 sm:gap-5 lg:gap-20 font-Poppins">
           <div className='w-full md:w-[50%] order-2 md:order-2'>
             {/* <p className='text-4xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold md:py-10'>What We Do</p> */}
@@ -61,7 +61,7 @@ We believe that access to basic necessities such as shoes should not be a barrie
         </div>
 
 
-        <div className="flex flex-col md:flex-row md:pb-5 gap-10 sm:gap-5 lg:gap-20 font-Poppins">
+        <div className="flex flex-col md:flex-row md:pb-5 gap-4 sm:gap-5 lg:gap-20 font-Poppins">
           <div className='w-full md:w-[50%]'>
           <Reveal repeat trigger={<div />}>
               <FadeInLeft>
