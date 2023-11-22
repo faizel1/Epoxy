@@ -79,6 +79,11 @@ export default function Home() {
 
         <div className="flex flex-col md:flex-row justify-start gap-5 md:gap-0 xl:gap-20">
      
+        <Reveal repeat trigger={<div className='w-full md:w-[50%] text-3xl font-bold text-[#0D1317]' />}>
+            <FadeInRight>
+              <p>What we do?</p>
+            </FadeInRight>
+          </Reveal>
           <Reveal repeat trigger={<div className='w-full md:w-[50%] text-left text-md' />}>
             <FadeInLeft>
               <p >Our company specializes in providing top-quality Epoxy flooring services for a variety of industries and applications. From commercial and industrial spaces to residential homes, we offer a wide range of customizable options to meet your specific needs.</p>
@@ -92,6 +97,21 @@ export default function Home() {
       <div className="bg-[#FEF3E6] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full py-12 gap-8 px-7 xl:px-44 2xl:44">
 
         <ServiceCard
+          image='/img/ServiceCardIcon1.png'
+          title={`Basements floors & 
+            retention walls`}
+          desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, ' />
+
+        <ServiceCard
+          image='/img/ServiceCardIcon2.png'
+          title='Roof top and terrace area work with Seloflex(sika Raintite)'
+          desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, ' />
+
+        <ServiceCard
+          image='/img/ServiceCardIcon3.png'
+          title='Basements floors &retention walls'
+          desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, ' />
+          <ServiceCard
           image='/img/ServiceCardIcon1.png'
           title={`Basements floors & 
             retention walls`}

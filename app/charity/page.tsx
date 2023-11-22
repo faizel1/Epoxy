@@ -42,11 +42,9 @@ const Charity = () => {
               <FadeInLeft>
      
             {/* <p className='py-5 md:py-10 text-lg text-[#5B5B5B]' >Our company specializes in providing top-quality Epoxy flooring services for a variety of industries and applications. From commercial and industrial spaces to residential homes, we offer a wide range of customizable options to meet your specific needs. Our highly skilled team of professionals is dedicated to delivering exceptional results, using only the best materials and techniques available.</p> */}
-           
             <p className='py-5 md:py-10 text-lg text-[#5B5B5B]' >
-            Our company recently made a contribution to the Fasil Timhertbet school, which is situated near the Semien hotel. We donated a total of 47 shoes to provide for underprivileged students.
-We believe that access to basic necessities such as shoes should not be a barrier to education. We are committed to supporting the education of children in underprivileged communities and believe that small acts of kindness can go a long way in making a difference in their lives.
-            </p>
+            Our company recently made a contribution to Aste Fasil Timhertbet, which is situated near the Semien hotel. We donated a total of 47 shoes to provide for underprivileged students. We believe that access to basic necessities such as shoes should not be a barrier to education. We are committed to supporting the education of children in underprivileged communities and believe that small acts of kindness can go a long way in making a difference in their lives.
+           </p>
             </FadeInLeft>
             </Reveal>
           </div>
