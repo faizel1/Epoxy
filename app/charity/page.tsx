@@ -7,7 +7,7 @@ import { TypeAnimation } from 'react-type-animation'
 import { Reveal, Tween } from 'react-gsap';
 const FadeInLeft = ({ children }: any) => {
   return (
-    <Tween from={{ x: '-500', opacity: 0 }} to={{ x: '0', opacity: 1 }}>
+    <Tween from={{ x: '-500', opacity: 0 }} to={{ x: '0', opacity: 1 }} duration={0.7} >
       {children}
     </Tween>
   )
@@ -15,7 +15,7 @@ const FadeInLeft = ({ children }: any) => {
 
 const FadeInRight = ({ children }: any) => {
   return (
-    <Tween from={{ x: '500', opacity: 0 }} to={{ x: '0', opacity: 1 }}>
+    <Tween from={{ x: '500', opacity: 0}} to={{ x: '0', opacity: 1 }}  duration={0.7}  >
       {children}
     </Tween>
   )
