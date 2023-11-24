@@ -60,7 +60,7 @@ const Gallery = () => {
 
   const vidRef1 = useRef<HTMLVideoElement>(null);
   const vidRef2 = useRef<HTMLVideoElement>(null);
-  const vidRef3 = useRef<HTMLVideoElement>(null);
+  // const vidRef3 = useRef<HTMLVideoElement>(null);
   const vidRef4 = useRef<HTMLVideoElement>(null);
   const vidRef5 = useRef<HTMLVideoElement>(null);
   const vidRef6 = useRef<HTMLVideoElement>(null);
@@ -183,23 +183,6 @@ const Gallery = () => {
           {/* 6 */}
 
 
-          <Reveal repeat trigger={<div />}>
-            <FadeInRight>
-
-              <VideoPlayer videoRef={vidRef4} videoIndex={4} handlePlayVideo={handlePlayVideo} videoNumber={4} />
-
-
-            </FadeInRight>
-          </Reveal>
-
-
-
-
-
-
-
-
-
 
           {/* 11 */}
           <Reveal repeat trigger={<div />}>
@@ -211,6 +194,15 @@ const Gallery = () => {
 
             </FadeInRight>
           </Reveal>
+          <Reveal repeat trigger={<div />}>
+            <FadeInRight>
+
+              <VideoPlayer videoRef={vidRef4} videoIndex={4} handlePlayVideo={handlePlayVideo} videoNumber={4} />
+
+
+            </FadeInRight>
+          </Reveal>
+
           {/* 12 */}
           <Reveal repeat trigger={<div />}>
             <FadeInRight>
@@ -221,10 +213,12 @@ const Gallery = () => {
 
             </FadeInRight>
           </Reveal>
+
+
           {/* 5 */}
+   
 
-
-          <Reveal repeat trigger={<div />}>
+          {/* <Reveal repeat trigger={<div />}>
             <FadeInRight>
 
 
@@ -232,7 +226,7 @@ const Gallery = () => {
 
 
             </FadeInRight>
-          </Reveal>
+          </Reveal> */}
 
 
 

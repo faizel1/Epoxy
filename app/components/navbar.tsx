@@ -45,7 +45,7 @@ const Navbar = () => {
                 <div className={`${menuOpen ? "pl-10 pr-4" : "px-4"} flex justify-between items-center py-4 sm:px-10 md:px-10 lg:pr-20 xl:pl-32 2xl:pl-40  mx-auto 2`}>
 
                     <Link href={"/"}>
-                        <Image src="/img/Logo.jpg" className='w-24 md:w-36 h-auto' width={100} height={50} alt="Logo" />    
+                        <Image src="/img/LogoNew.png" className='w-24 md:w-36 h-auto' width={100} height={50} alt="Logo" />    
                    
 
                     </Link>
