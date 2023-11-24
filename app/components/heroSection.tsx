@@ -36,8 +36,8 @@ const HeroSection = () => {
       <div className="hero hero.align-items-left min-h-[calc(100vh)] md:min-h-[calc(101vh-0px)] " style={{ backgroundImage: 'url(/img/heroEp.webp)' }}>
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content mt-40 md:mt-20">
-          <div className="w-full md:max-w-[40rem]">
-            <h1 className="mb-5 text-4xl sm:text-6xl text-left font-bold">
+          <div className="w-full md:max-w-[40rem] lg:mt-20 2xl:mt-0">
+            <h1 className="mb-5 text-4xl sm:text-4xl xl:text-[40px] 2xl:text-6xl text-left font-bold">
               <TypeAnimation
                 sequence={[
                   "Leading epoxy flooring contractor in Ethiopia ",
@@ -58,7 +58,7 @@ const HeroSection = () => {
                     damping: 50,
                     mass: 0.75,
                     stiffness: 100,
-                }} className="btn border-none text-white text-[14px] normal-case  bg-[#F58A07] hover:bg-white hover:text-[#F58A07]  rounded-full min-w-[12rem] "> Contact Us </motion.div></Link>
+                }} className="btn border-none text-white text-[14px] normal-case  bg-[#F58A07] hover:bg-[#FFF] hover:text-[#F58A07]  rounded-full min-w-[12rem] "> Contact Us </motion.div></Link>
              
              <motion.div  animate={{ rotate: -360 }}
                 transition={{
@@ -66,7 +66,7 @@ const HeroSection = () => {
                     damping: 50,
                     mass: 0.75,
                     stiffness: 100,
-                }} className='btn border-none text-white text-[14px] normal-case  bg-[#F58A07] hover:bg-white hover:text-[#F58A07]  rounded-full min-w-[12rem]  cursor-pointer hover:text-[#F58A07]'         onClick={handleOpenPopup}
+                }} className='btn border-none text-[#F58A07] text-[14px] normal-case  bg-[#FFF] hover:bg-[#F58A07] hover:text-[#FFF]  rounded-full min-w-[12rem]  cursor-pointer '         onClick={handleOpenPopup}
  >Watch Video</motion.div>
             </div>
             <p className='mb-10 text-left text-[#FFFFFF80]' >Worked with 100+ Companies</p>
