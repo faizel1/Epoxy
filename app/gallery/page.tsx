@@ -106,7 +106,7 @@ const Gallery = () => {
         <div className="  text-[#292F36] text-center flex items-end justify-center flex-1 h-full">
           <div className="bg-white py-5 px-20 rounded-t-2xl">
 
-            <h1 className='text-2xl lg:text-5xl font-bold' >Gallery Us</h1>
+            <h1 className='text-2xl lg:text-5xl font-bold' >Gallery</h1>
             <h3 className='text-md lg:text-xl font-extralight' >Home / Gallery</h3>
           </div>
         </div>
